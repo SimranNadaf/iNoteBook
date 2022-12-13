@@ -23,4 +23,6 @@ const UserSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('user',UserSchema);
+const User= mongoose.model('user',UserSchema);
+// User.createIndexes(); -- is remove to avoid email id index(id is required only)
+module.exports = User
