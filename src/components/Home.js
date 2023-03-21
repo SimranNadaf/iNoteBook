@@ -1,11 +1,12 @@
-import React from 'react'
-
-function Home() {
+import React from "react";
+import Notes from "./Notes";
+// import NoteState from "../Context/note/NoteState";
+function Home(props) {
   return (
     <>
-      <h3 className='text-center'>This is Home page</h3>
+      <Notes alert={props.alert}/>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

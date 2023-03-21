@@ -21,8 +21,8 @@ router.post(
   "/addnote",
   fetchuser,
   [
-    body("title", "Please enter valid tile").isLength({ min: 3 }),
-    body("description", "Please enter valid Password").isLength({ min: 5 }),
+    body("title", "Length of title must be minimum 3 character").isLength({ min: 3 }),
+    body("description", "Length of title must be minimum 3 character").isLength({ min: 5 }),
   ],
   async (req, res) => {
     // Handling validation error
